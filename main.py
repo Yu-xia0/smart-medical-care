@@ -31,7 +31,7 @@ transform = transforms.Compose([
 # 加载数据集
 dataset = datasets.ImageFolder(root=data_dir, transform=transform)
 
-# 划分训练集、验证集和测试集（80% 训练, 10% 验证, 10% 测试）
+# 划分训练集、验证集和测试集
 train_size = int(0.4 * len(dataset))
 val_size = int(0.1 * len(dataset))
 test_size = len(dataset) - train_size - val_size
